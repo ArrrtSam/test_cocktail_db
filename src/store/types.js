@@ -1,0 +1,6 @@
+export const FETCH_FILTERS = 'FETCH_FILTERS';
+export const TOGGLE_FILTER = 'TOGGLE_FILTER';
+export const FETCH_DATA = 'FETCH_DATA';
+export const SET_LOADING = 'SET_LOADING';
+export const SET_PAGINATION = 'SET_PAGINATION';
+export const RESET_PAGINATION = 'RESET_PAGINATION';
