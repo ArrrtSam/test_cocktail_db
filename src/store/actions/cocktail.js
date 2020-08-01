@@ -37,7 +37,6 @@ export const fetchData = (pagination, filter) => async (dispatch) => {
     const res = await axios.get(
       `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${query}`,
     );
-    console.log(filter[pagination]);
     dispatch(setPagination());
     dispatch({
       type: FETCH_DATA,

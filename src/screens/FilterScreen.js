@@ -17,12 +17,10 @@ export const FilterScreen = ({navigation}) => {
 
   const toggleFilters = (id) => {
     dispatch(toggleFilter(id));
-    console.log(id);
   };
 
   const applyFilters = () => {
     dispatch(setPagination(true));
-    console.log(activeFilter);
     dispatch(fetchData(0, activeFilter));
     navigation.navigate('Main');
   };

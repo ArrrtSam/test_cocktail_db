@@ -35,7 +35,6 @@ export const MainScreen = ({navigation}) => {
 
   const fetchNewCategry = () => {
     dispatch(setPagination());
-    console.log('Pagination', pagination);
     dispatch(fetchData(pagination, activeFilter));
   };
 
@@ -68,7 +67,6 @@ export const MainScreen = ({navigation}) => {
       </View>
     );
   }
-  console.log(drinks);
   return (
     <View style={styles.wrapper}>
       <SectionList
